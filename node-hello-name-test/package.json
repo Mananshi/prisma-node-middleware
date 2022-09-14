@@ -1,6 +1,10 @@
 {
   "name": "node-hello-name-test",
+<<<<<<< HEAD
   "version": "2.0.1",
+=======
+  "version": "1.5.0",
+>>>>>>> 2a6f6d5d9123e01d0711be73658781348b10dbfe
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,5 +16,8 @@
     "name"
   ],
   "author": "mananshi-vyas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.3.1"
+  }
 }
