@@ -1,6 +1,4 @@
-let uniqueArr = []
-
-function sayHello(name){
+const sayHello = (name) => {
 
     if(name){
         return `Hello ${name}, how are you?`
@@ -11,4 +9,9 @@ function sayHello(name){
     
 }
 
-module.exports = sayHello
+const prismaClient = () => {
+    const { PrismaClient } = require('@prisma/client')
+    return prisma = new PrismaClient()
+}
+
+module.exports = { sayHello, prismaClient}
