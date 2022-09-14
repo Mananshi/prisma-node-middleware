@@ -1,5 +1,3 @@
-let uniqueArr = []
-
 function sayHello(name){
 
     if(name){
@@ -10,5 +8,17 @@ function sayHello(name){
     }
     
 }
+function sayBye(name){
 
-module.exports = sayHello
+    if(name){
+        return `Bye ${name}, have a nice day!`
+    }
+    else {
+        return `Bye World!`
+    }
+    
+}
+
+
+exports.sayHello = sayHello
+exports.sayBye = sayBye
