@@ -1,10 +1,6 @@
 {
   "name": "node-hello-name-test",
-<<<<<<< HEAD
-  "version": "2.0.1",
-=======
-  "version": "1.5.0",
->>>>>>> 2a6f6d5d9123e01d0711be73658781348b10dbfe
+  "version": "2.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
