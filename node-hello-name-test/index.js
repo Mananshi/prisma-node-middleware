@@ -19,6 +19,15 @@ function sayBye(name){
     
 }
 
+function prismaClientInstance() {
+    const { PrismaClient } = require('@prisma/client')
+    return new PrismaClient();
+}
+
+export const protect = async (req, res, next) => {
+    res.send("Hello World!")
+  }
 
 exports.sayHello = sayHello
 exports.sayBye = sayBye
+exports.prismaClientInstance = prismaClientInstance
