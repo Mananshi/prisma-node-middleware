@@ -1,4 +1,8 @@
-function sayHello(name){
+import express from 'express'
+
+export const app = express()
+
+export const sayHello = (name) => {
 
     if(name){
         return `Hello ${name}, how are you?`
@@ -8,7 +12,7 @@ function sayHello(name){
     }
     
 }
-function sayBye(name){
+export const sayBye = (name) =>{
 
     if(name){
         return `Bye ${name}, have a nice day!`
@@ -19,17 +23,11 @@ function sayBye(name){
     
 }
 
-function prismaClientInstance() {
+export const prismaClientInstance = () => {
     const { PrismaClient } = require('@prisma/client')
     return new PrismaClient();
 }
 
-const protect = async (req, res, next) => {
-    res.send("Hello World!")
-  }
-
-exports.sayHello = sayHello
-exports.sayBye = sayBye
-exports.prismaClientInstance = prismaClientInstance
-
-module.exports = protect
+export const test = async (req, res) => {
+    return res.status(200).json({ message: 'Hello World!' })
+}
