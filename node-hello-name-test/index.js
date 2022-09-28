@@ -24,10 +24,12 @@ function prismaClientInstance() {
     return new PrismaClient();
 }
 
-export const protect = async (req, res, next) => {
+const protect = async (req, res, next) => {
     res.send("Hello World!")
   }
 
 exports.sayHello = sayHello
 exports.sayBye = sayBye
 exports.prismaClientInstance = prismaClientInstance
+
+module.exports = protect
